@@ -1,4 +1,3 @@
-// src/models/CartItem.js (Código ACTUALIZADO)
 const { DataTypes } = require('sequelize');
 const { sequelize } = require('../../config/database'); // Asegúrate que la ruta a database.js es correcta
 

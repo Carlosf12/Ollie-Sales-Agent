@@ -1,4 +1,3 @@
-// src/api/routes/productRoutes.js
 const express = require('express');
 const router = express.Router(); // Crea una nueva instancia de Router para las rutas de productos
 const dataLoader = require('../../utils/dataLoader'); // Para acceder a getProducts directamente

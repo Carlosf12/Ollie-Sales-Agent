@@ -1,4 +1,3 @@
-// src/utils/dataLoader.js
 const ExcelJS = require('exceljs');
 const path = require('path');
 

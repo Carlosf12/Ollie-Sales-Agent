@@ -1,4 +1,3 @@
-// src/api/routes/cartRoutes.js
 const express = require('express');
 const router = express.Router(); // Crea una nueva instancia de Router para las rutas del carrito
 const tools = require('../../agent/tools'); // Asegúrate de la ruta correcta para las herramientas

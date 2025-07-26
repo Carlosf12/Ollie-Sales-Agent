@@ -1,4 +1,3 @@
-// src/models/Cart.js
 const { DataTypes } = require('sequelize');
 const { sequelize } = require('../../config/database');
 const CartItem = require('./CartItems'); // Importamos CartItem para definir la relación
