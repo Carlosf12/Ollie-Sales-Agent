@@ -10,7 +10,7 @@ products.xlsx # <--- Incluido para ser ignorado
 # Logs y resultados de compilación
 npm-debug.log
 yarn-debug.log
-/public/
+
 
 # Archivos específicos de sistemas operativos/IDE
 .DS_Store
