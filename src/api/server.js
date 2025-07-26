@@ -2,7 +2,7 @@ const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
 const path = require('path');
-const { sequelize } = require('../../config/database'); // Ruta corregida a database.js
+const { sequelize } = require('../../config/database'); 
 
 // Importa todos tus modelos para que Sequelize los reconozca
 const Product = require('../models/Product');

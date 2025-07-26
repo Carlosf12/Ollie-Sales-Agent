@@ -1,5 +1,5 @@
 const { OpenAI } = require('openai');
-const tools = require('./tools'); // Importa todas las herramientas
+const tools = require('./tools'); 
 
 // Configuración del cliente OpenAI para Ollama
 const openai = new OpenAI({

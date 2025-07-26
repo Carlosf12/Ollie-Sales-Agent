@@ -1,9 +1,5 @@
 const { DataTypes } = require('sequelize');
-const { sequelize } = require('../../config/database'); // Asegúrate que la ruta a database.js es correcta
-
-// No necesitamos importar Product y Cart aquí si las asociaciones se definen en server.js
-// const Product = require('./Product');
-// const Cart = require('./Cart');
+const { sequelize } = require('../../config/database');
 
 const CartItem = sequelize.define('CartItem', {
     id: {
@@ -15,7 +11,7 @@ const CartItem = sequelize.define('CartItem', {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'carts', // <-- ¡CAMBIO AQUÍ! Usa el nombre de la tabla como STRING
+            model: 'carts', 
             key: 'id',
         },
     },
@@ -23,7 +19,7 @@ const CartItem = sequelize.define('CartItem', {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'products', // <-- ¡CAMBIO AQUÍ! Usa el nombre de la tabla como STRING
+            model: 'products', 
             key: 'id',
         },
     },
@@ -36,7 +32,7 @@ const CartItem = sequelize.define('CartItem', {
         },
     },
 }, {
-    tableName: 'cart_items', // Nombre de la tabla en la base de datos
+    tableName: 'cart_items', 
     timestamps: true,
 });
 

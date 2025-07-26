@@ -14,7 +14,6 @@ const sequelize = new Sequelize(
         dialect: 'postgres',       // Dialecto de la base de datos (PostgreSQL)
         logging: false,            // Desactiva el log de SQL en la consola (opcional)
 
-        // ¡CAMBIO CLAVE AQUÍ! Deshabilitamos SSL explícitamente para el desarrollo local.
         dialectOptions: {
             ssl: false // No intentar ninguna conexión SSL
         },
@@ -28,10 +27,8 @@ const sequelize = new Sequelize(
     }
 );
 
-// NOTA: La función connectDB ha sido movida a server.js para manejar la sincronización de modelos.
-// Este archivo solo debe encargarse de configurar y exportar la instancia de Sequelize.
 
-// Exporta la instancia de Sequelize
+
 module.exports = {
     sequelize
 };

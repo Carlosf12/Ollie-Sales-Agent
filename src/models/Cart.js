@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const { sequelize } = require('../../config/database');
-const CartItem = require('./CartItems'); // Importamos CartItem para definir la relación
+const CartItem = require('./CartItems'); 
 
 const Cart = sequelize.define('Cart', {
     id: {
@@ -13,10 +13,9 @@ const Cart = sequelize.define('Cart', {
         allowNull: false,
         unique: true, // Cada sesión tendrá un único carrito activo
     },
-    // Podríamos añadir más campos aquí en el futuro, como 'status' (activo, completado), 'userId', etc.
 }, {
-    tableName: 'carts', // Nombre de la tabla en la DB
-    timestamps: true, // Añade createdAt y updatedAt
+    tableName: 'carts',
+    timestamps: true, 
 });
 
 

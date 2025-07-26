@@ -1,6 +1,6 @@
 const express = require('express');
-const router = express.Router(); // Crea una nueva instancia de Router para las rutas del carrito
-const tools = require('../../agent/tools'); // Asegúrate de la ruta correcta para las herramientas
+const router = express.Router(); 
+const tools = require('../../agent/tools'); tas
 
 // --- Rutas API para el Carrito ---
 
@@ -59,4 +59,4 @@ router.get('/cart', async (req, res) => {
     }
 });
 
-module.exports = router; // Exporta el router configurado para el carrito
+module.exports = router; 

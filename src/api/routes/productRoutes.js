@@ -1,6 +1,6 @@
 const express = require('express');
-const router = express.Router(); // Crea una nueva instancia de Router para las rutas de productos
-const dataLoader = require('../../utils/dataLoader'); // Para acceder a getProducts directamente
+const router = express.Router(); 
+const dataLoader = require('../../utils/dataLoader'); 
 
 // --- Rutas API para Productos ---
 
